@@ -68,7 +68,7 @@ public abstract class TextChunk extends Chunk {
         ModuleBase.readByteBuf (_dstream, buf, _module);
 	/* Ensure that each byt is a printable ASCII character. */
 	for (int i=0; i<buf.length; i++) {
-	    if (buf[i] < 32 || buf[i] > 127) {
+	    if (buf[i] < 32) { // || buf[i] > 127) { [LP] buf[i], a signed byte, cannot be > 127
 		buf[i] = 32;
 	    }
 	}

@@ -61,7 +61,7 @@ public class CommentsChunk extends Chunk {
             bytesLeft -= count;
 	    /* Ensure that each byt is a printable ASCII character. */
 	    for (int j=0; j<buf.length; j++) {
-		if (buf[j] < 32 || buf[j] > 127) {
+    if (buf[j] < 32) { // || buf[j] > 127) { [LP] buf[j], a signed byte, cannot be > 127	      
 		    buf[j] = 32;
 		}
 	    }
