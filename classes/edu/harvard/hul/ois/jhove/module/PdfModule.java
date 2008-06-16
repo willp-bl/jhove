@@ -1212,6 +1212,13 @@ public class PdfModule
                         break;
                     }
                     _objCount = ((Numeric) _parser.getNext ()).getIntegerValue ();
+                    // [LP] Trying to prevent runtime exceptions
+                    //
+                    if (firstObj + _objCount > _xref.length) {
+                      throw new PdfMalformedException 
+                      ("Xref table with out of bounds index", 
+                       _parser.getOffset ());
+                    }
                     for (int i=0; i<_objCount; i++) {
                         // In reading the cross-reference table, also check
                         // the extra syntactic requirements of PDF/A.
