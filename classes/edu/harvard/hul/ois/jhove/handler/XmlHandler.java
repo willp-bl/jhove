@@ -3635,12 +3635,12 @@ public class XmlHandler
              final String[] orient = { "unknown", 
                      "normal*",
                      "normal, image flipped",
-                     "normal, rotated 180¡",
-                     "normal, image flipped, rotated 180¡",
-                     "normal, image flipped, rotated cw 90¡",
-                     "normal, rotated ccw 90¡",
-                     "normal, image flipped, rotated ccw 90¡",
-                     "normal, rotated cw 90¡" };
+                     "normal, rotated 180\u00B0",
+                     "normal, image flipped, rotated 180\u00B0",
+                     "normal, image flipped, rotated cw 90\u00B0",
+                     "normal, rotated ccw 90\u00B0",
+                     "normal, image flipped, rotated ccw 90\u00B0",
+                     "normal, rotated cw 90\u00B0" };
              if (n > 8 || n < 0) {
                  n = 0;   // force "unknown" for bad value
              }
