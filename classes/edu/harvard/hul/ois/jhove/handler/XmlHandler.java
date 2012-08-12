@@ -41,10 +41,10 @@ public class XmlHandler
     private static final String NAME = "XML";
 
     /** Handler release identifier. */
-    private static final String RELEASE = "1.6";
+    private static final String RELEASE = "1.7";
 
     /** Handler release date. */
-    private static final int [] DATE = {2009, 10, 14};
+    private static final int [] DATE = {2012, 8, 12};
 
     /** Handler informative note. */
     private static final String NOTE =
@@ -53,9 +53,10 @@ public class XmlHandler
 
     /** Handler rights statement. */
     private static final String RIGHTS =
-        "Copyright 2003-2011 by JSTOR and the President and Fellows of " +
-        "Harvard College. " +
-        "Released under the GNU Lesser General Public License.";
+            "Derived from software Copyright 2004-2011 " +
+                    "by the President and Fellows of Harvard College. " +
+                    "Version 1.7 independently released. " +
+                    "Released under the GNU Lesser General Public License.";
 
     /** Localized line separator character. */
     private final static String EOL = System.getProperty ("line.separator");
